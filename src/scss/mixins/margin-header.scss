@@ -1,0 +1,27 @@
+@mixin margin-header {
+            margin-bottom: 420px;
+
+    @media screen and (max-width:1140px) {
+
+        margin-bottom: 280px;
+
+    }
+
+    @media screen and (max-width:660px) {
+
+        margin-bottom: 240px;
+
+    }
+
+    @media screen and (max-width:570px) {
+
+        margin-bottom: 180px;
+
+    }
+
+    @media screen and (max-width:440px) {
+
+        margin-bottom: 160px;
+
+    }
+}

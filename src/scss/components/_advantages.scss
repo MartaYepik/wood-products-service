@@ -1,0 +1,88 @@
+.advantages-wrapper{
+    width: 100%;
+    margin-bottom: 260px;
+    @include margin;
+    .advantages-title {
+            padding-left: 16%;
+            @include title;
+    }
+    .advantages-container {
+        margin-top: 120px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        .advantages-info {
+            width: 84%;
+            display: grid;
+            row-gap: 120px;
+            grid-template-columns: 56% 44%;
+            .advantages-info-video{
+                border-radius: 42px;
+                width: 90%;
+                height: 386px;
+            }
+            .advantages-content {
+                display: grid;
+                row-gap: 40px;
+                p{
+                    @include text;
+                }
+            }
+            .receive-consult{
+                grid-area: 2 / 1 / span 2 / span 3;
+                justify-self: center;
+            }
+            .order-button {
+                @include button;
+                a{
+                    color: inherit;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:940px) {
+    .advantages-wrapper {
+    
+            .advantages-container {
+                margin-top: 100px;   
+                .advantages-info {
+                    row-gap: 80px;
+                    grid-template-columns: repeat(1, 100%);
+                    .advantages-info-video {
+                        width: 100%;
+                    }
+                    
+                    .advantages-content {
+                        grid-area: 1 / 1 / 1 / 1;
+                    }
+                    .receive-consult {
+                        grid-area: auto / auto / auto / auto;
+                    }
+                }
+                
+            }
+        }
+}
+
+
+@media screen and (max-width:600px) {
+    .advantages-wrapper {
+        .advantages-container {
+            margin-top: 60px;
+
+            .advantages-info {
+                row-gap: 60px;
+                .advantages-content {
+                        row-gap: 28px;
+                    }
+
+            }
+        }
+    }
+}
+
+

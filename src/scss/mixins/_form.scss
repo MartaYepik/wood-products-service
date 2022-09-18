@@ -1,0 +1,17 @@
+@mixin form {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 46px;
+    width: 100%;
+    background-color: transparent;
+    border: 4px solid $form-border;
+    border-radius: 42px;
+    color: $prime-color;
+    @include text;
+        &:focus{
+            outline: none;
+            color: black;
+            border: 4px solid $form-border-active;
+            background-color: $button-hover-background;
+        }
+}

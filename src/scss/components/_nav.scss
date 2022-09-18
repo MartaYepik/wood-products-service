@@ -1,0 +1,176 @@
+.menu {
+    position: fixed;
+    z-index: 4;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 0px 0px 79px 79px;
+    background-color: transparent;
+    .menu-wrapper{
+        padding: 50px 102px;
+        width: 100%;
+        max-width: 1582px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .menu__logo {
+                @include logo;
+            }
+        
+            .nav {
+                font-family: "Inter-700";
+                font-size: 1.2em;
+                display: flex;
+                align-items: center;
+        
+                .nav__list {
+                    display: flex;
+        
+                    .nav__list_item {
+                        margin-left: 58px;
+        
+                        a {
+                            color: $prime-color;
+                            white-space: nowrap;
+        
+                            &:active {
+                                color: $text-active-color;
+                            }
+                        }
+        
+        
+                    }
+                }
+            }
+            .hamburger{
+                display: none;
+                &:hover{
+                    cursor: pointer;
+                }
+                .bar{
+                    display: block;
+                    width: 25px;
+                    height: 3px;
+                    margin-bottom: 5px;
+                    border-radius: 20px;
+                    transition: all 0.2s ease-in-out;
+                    background-color: aliceblue;
+                }
+                .bar:not(:nth-child(2)){
+                    width: 11px;
+                }
+            }
+
+    }
+    
+}
+.nav-button {
+    display: none;
+}
+
+.menu.scrolled {
+    background-color: $black;
+    box-shadow: 0px -8px 52px rgba(238, 238, 238, 0.17);
+}
+@media screen and (max-width:1200px) {
+    .menu{
+    border-radius: 0px 0px 40px 40px;
+        .menu-wrapper{
+            padding: 3% 6%;
+            .nav {
+                    font-size: 1.1em;
+            
+                    .nav__list {
+                        .nav__list_item {
+                            margin-left: 48px;
+            
+                        }
+                    }
+                }
+        }
+    }
+}
+@media screen and (max-width:900px) {
+    .menu {
+
+        .menu-wrapper {
+            .nav {
+                font-size: 1em;
+
+                .nav__list {
+                    .nav__list_item {
+                        margin-left: 38px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:760px) {
+    .menu {
+        border-radius: 0px 0px 30px 30px;
+
+        .menu-wrapper {
+            padding: 4% 7%;
+            .nav{
+                position: fixed;
+                left: -100%;
+                top: 0;
+                z-index: -1;
+                gap: 0;
+                height: 100vh;
+                background-color: $black;
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+                &.active{
+                    left: 0;
+                }
+                .nav__list{
+                    flex-direction: column;
+                    .nav__list_item{
+                    margin: 16px 0;
+                }
+                }
+                
+            }
+            .hamburger{
+                        display: block;
+                        .bar:nth-child(3){
+                            margin-left: auto;
+                        }
+
+                        &.active .bar:nth-child(2){
+                            
+                            opacity: 0;
+                        } 
+                        &.active .bar:nth-child(1){
+                            width: 25px;
+                            transform: translateY(8px) rotate(45deg);
+                        } 
+                        &.active .bar:nth-child(3){
+                            width: 25px;
+                            transform: translateY(-8px) rotate(-45deg);
+                        } 
+                    }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .menu {
+        .menu-wrapper {
+            .nav {
+                .nav-button {
+                    button {
+                        width: 40px;
+                    }
+
+                }
+            }
+        }
+    }
+}
+

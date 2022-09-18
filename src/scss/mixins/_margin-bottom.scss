@@ -1,0 +1,25 @@
+@mixin margin {
+    @media screen and (max-width:1140px) {
+    
+        margin-bottom: 220px;
+    
+}
+
+@media screen and (max-width:660px) {
+    
+        margin-bottom: 180px;
+    
+}
+
+@media screen and (max-width:570px) {
+    
+        margin-bottom: 120px;
+    
+}
+
+@media screen and (max-width:440px) {
+  
+        margin-bottom: 100px;
+    
+}
+}

@@ -1,0 +1,65 @@
+@mixin table {
+
+table{
+    
+    border-collapse: collapse;
+}
+th{
+    text-align: start;
+}
+
+tr{
+    height: 96px;
+    @include text;
+    
+}
+td, th{
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+td, th:not(:first-child){
+    border-bottom: 1px solid rgba(142, 57, 33, 0.37);
+}
+.kind{
+    font-weight: bold;
+}
+
+col{
+    width: 20%;
+}
+
+@media screen and (max-width:1120px) {
+    
+    tr{
+    height: 66px;
+    font-size: 18px;
+    
+}
+}
+@media screen and (max-width:760px) {
+    
+    tr{
+    height: 46px;
+    font-size: 14px;
+    
+}
+}
+@media screen and (max-width:540px) {
+    
+    tr{
+    height: 36px;
+    font-size: 10px;
+    
+}
+}
+
+@media screen and (max-width:400px) {
+    
+    tr{
+    height: 26px;
+    font-size: 8px;
+    
+}
+}
+}

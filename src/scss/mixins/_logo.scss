@@ -1,0 +1,34 @@
+@mixin logo {
+    max-width: 198px;
+    max-height: 84px;
+    
+        .logo {
+            width: 100%;
+        }
+
+
+    @media screen and (max-width:1308px) {
+        width: 168px;
+        height: 74px;
+    }
+
+    @media screen and (max-width:1140px) {
+        width: 148px;
+        height: 64px;
+    }
+
+    @media screen and (max-width:660px) {
+        width: 128px;
+        height: 54px;
+    }
+
+    @media screen and (max-width:570px) {
+        width: 108px;
+        height: 44px;
+    }
+
+    @media screen and (max-width:440px) {
+        width: 88px;
+        height: 36px;
+    }
+}

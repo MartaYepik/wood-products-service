@@ -1,0 +1,19 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// підключення компонентів до сторінки
+@import "./components/header";
+@import "./components/nav";
+@import "./components/simple-nav";
+@import "./components/materials";
+@import "./components/footer";
+@import "./components/gallery";
+@import "./components/advantages";
+@import "./components/about";
+@import "./components/contact-form";
+@import "./components/question-form";
+@import "./components/error-page";
+@import "./components/prices";

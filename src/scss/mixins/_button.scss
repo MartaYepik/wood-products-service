@@ -1,0 +1,28 @@
+@mixin button{
+    font-family: "Inter-700";
+    background-color: $button-background;
+    border-radius: 42px;
+    border: none;
+    color: $prime-color;
+    padding: 10px 70px;
+    z-index: 2;
+     &:hover{
+        opacity: 0.9;
+        cursor: pointer;
+     }
+     &:active{
+        background-color: $button-hover-background;
+        color: $button-text-hover;
+     }
+     @media screen and (max-width:570px) {
+            & {
+            padding: 6px 38px;
+            }
+    }
+    @media screen and (max-width:440px) {
+            & {
+            padding: 4px 22px;
+            }
+    }
+}
+

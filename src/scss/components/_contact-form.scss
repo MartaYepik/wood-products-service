@@ -1,0 +1,110 @@
+.contact-form-wrapper {
+    margin-bottom: 290px;
+    @include margin;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    .contact-form-content {
+        justify-self: center;
+        .contact-form-title {
+            @include title;
+            margin-bottom: 118px;
+        }
+        
+            .tel{
+                margin-bottom: 32px;
+            }
+            .tel, .adress{
+                display: flex;
+                align-self: center;
+                .contact-number, .adress-text {
+                        @include text;
+                        align-self: center;
+                        white-space: nowrap;
+                    }
+                img{
+                    width: 50px;
+                    height: 50px;
+                    align-self: center;
+                    margin-right: 8px;
+                }
+            }
+        
+            
+    }
+    .contact-form-map {
+        width: 90%;
+        height: 100%;
+        .map{
+            width: 100%;
+            height: 100%;
+            border-radius: 42px;
+        }
+        
+    }
+    
+}
+
+@media screen and (max-width: 994px) {
+    .contact-form-wrapper {
+
+            grid-template-columns: 100%;
+            .contact-form-content {
+                margin: 24px;
+                justify-self: start;
+                .contact-form-title {
+                    margin-bottom: 68px;
+                }
+                .adress {
+                    margin-bottom: 42px;
+                }
+            }
+    
+            .contact-form-map {
+                justify-self: center;
+                width: 90%;
+                padding: 12px;
+                .map {
+                    border-radius: 22px;
+                    height: 412px;
+                }
+    
+            }
+    
+        }
+}
+
+@media screen and (max-width: 570px) {
+    .contact-form-wrapper {
+        .contact-form-content {
+            .contact-form-title {
+                margin-bottom: 40px;
+            }
+        }
+
+        .contact-form-map {
+            width: 100%;
+            .map {
+                border-radius: 22px;
+                height: 312px;
+            }
+
+        }
+
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .contact-form-wrapper {
+        .contact-form-content {
+
+            .contact-form-title {
+                margin-bottom: 38px;
+            }
+
+            .adress {
+                margin-bottom: 0px;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,68 @@
+.error-body{
+    background-image: url(../img/svg/404.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.background-container-error-page {
+    position: absolute;
+    z-index: 1;
+    margin: 6px;
+    border-radius: 8px 62px 62px 8px;
+    overflow: hidden;
+    width: 64%;
+    max-width: 1160px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    background-image: url(../img/background/background.jpg);
+}
+
+.content-box {
+    margin-top: 140px;
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .error-title{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 100%;
+        }
+    }
+    .alert{
+        text-align: center;
+        @include title;
+        margin-bottom: 40px;
+    }
+     p {
+        text-align: center;
+      @include text;
+      color: $text-decoration-color;
+      margin-bottom: 40px;
+    }
+    .button-error-page{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        .error-button {
+                
+                @include button;
+            }
+    }
+    
+}
+
+@media screen and (max-width:900px) {
+    .background-container-error-page {
+        height: 70%;
+}
+}

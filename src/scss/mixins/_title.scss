@@ -1,0 +1,36 @@
+@mixin title {
+    font-family: 'KyivType';
+    text-transform: uppercase;
+    font-size: 5.5em;
+    @media screen and (max-width:1308px) {
+            & {
+                font-size: 4.5em;
+            }
+        }
+    @media screen and (max-width:1140px) {
+            & {
+                font-size: 3.5em;
+            }
+    }
+    @media screen and (max-width:570px) {
+            & {
+                font-size: 2em;
+            }
+    }
+    @media screen and (max-width:440px) {
+            & {
+                font-size: 1.8em;
+            }
+        }
+    @media screen and (max-width:358px) {
+            & {
+                font-size: 1.5em;
+            }
+    }
+    @media screen and (max-width:320px) {
+            & {
+                font-size: 1.4em;
+            }
+    }
+}
+

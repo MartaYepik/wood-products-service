@@ -1,0 +1,94 @@
+.question-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    margin-right: 24px;
+    .question-title {
+        @include title;
+        align-self: end;
+        margin-bottom: 45px;
+    }
+
+    .question-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 64px;
+        .question-form {
+            textarea{
+                min-height: 260px;
+            }
+            textarea, input{
+                @include form;
+            }
+            input:nth-child(-n+3){
+                margin-bottom: 20px;
+            }
+            .send{
+                margin-top: 40px;
+                @include button;
+            }
+        }
+        
+        .question-content {
+            @include text;
+            text-align: end;
+            line-height: 1.5;
+            .wood-img {
+                position: relative;
+                top: 120px;
+                z-index: -2;
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        
+            
+    }
+}
+
+
+@media screen and (max-width: 994px) {
+    .question-wrapper {
+            .question-title {
+                align-self: flex-start;
+            }
+    
+            .question-container {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                margin-bottom: 170px;    
+                .question-form {
+                    textarea {
+                        min-height: 200px;
+                    }
+                }
+                .question-content {
+                    grid-area: 1 / 1 / 1 / 1;
+                    text-align: start;
+                    padding-right: 80px;
+                    margin-bottom: 46px;
+                    .wood-img {
+                        display: none;
+                    }
+                }
+    
+    
+            }
+        }
+}
+
+@media screen and (max-width: 400px){
+    .question-wrapper {
+
+            .question-container {
+                margin-bottom: 100px;
+                .question-content {
+                    padding-right: 10px;
+                }
+    
+    
+            }
+        }
+}

@@ -1,0 +1,47 @@
+@mixin picture {
+    img {
+            max-width: 205px;
+            max-height: 205px;
+    
+        }
+
+    @media screen and (max-width:1308px) {
+        img {
+                max-width: 185px;
+                max-height: 185px;
+        
+        }
+    }
+
+    @media screen and (max-width:1140px) {
+        img {
+            max-width: 165px;
+            max-height: 165px;
+      
+          }
+    }
+
+    @media screen and (max-width:660px) {
+        img {
+            max-width: 145px;
+            max-height: 145px;
+    
+        }
+    }
+
+    @media screen and (max-width:570px) {
+        img {
+                width: 110px;
+                height: 110px;
+        
+         }
+    }
+
+    @media screen and (max-width:440px) {
+        img {
+                width: 90px;
+                height: 90px;
+        
+            }
+    }
+}

@@ -1,0 +1,29 @@
+// @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+
+@font-face {
+    font-family: 'Inter-500';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+    url('../fonts/inter-v12-latin-500.woff2') format('woff2'),
+    url('../fonts/inter-v12-latin-500.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter-700';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/inter-v12-latin-700.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/inter-v12-latin-700.woff2') format('woff2'),
+        url('../fonts/inter-v12-latin-700.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'KyivType';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('../fonts/KyivType Sans Medium.woff2') format('woff2'),
+        url('../fonts/KyivType Sans Medium.woff') format('woff');
+}

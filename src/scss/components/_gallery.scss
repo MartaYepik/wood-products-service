@@ -1,0 +1,73 @@
+.gallery-wrapper {
+    width: 100%;
+    margin-bottom: 260px;
+    @include margin;
+    .gallery-container {
+            .gallery-title {
+                padding-left: 16%;
+                @include title;
+            }
+            .gallery-slider {
+                margin-top: 120px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @media screen and (max-width:720px) {
+                        & {
+                            margin-top: 80px;
+                        }
+                    }
+                @media screen and (max-width:570px) {
+                        & {
+                            margin-top: 46px;
+                        }
+                }
+                .example-gallery {
+                    border-radius: 42px;
+                    overflow: hidden;
+                    width: 78%;
+                    margin-left: 24px;
+                    margin-right: 24px;
+                    @media screen and (max-width:570px) {
+                        & {
+                            margin-left: 14px;
+                            margin-right: 14px;
+                        }
+                    }
+                    @media screen and (max-width:440px) {
+                            & {
+                            margin-left: 8px;
+                            margin-right: 8px;
+                            }
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+                .direction-button{
+                    background-color: transparent;
+                    border: none;
+                    color: $text-active-color;
+                    width: 5%;
+                    padding: 0;
+                    min-width: 20px;
+                    img{
+                        width: 100%;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    &:active{
+                        transform: scale(1.04);
+                    }
+
+                }
+            }
+            @include highlight;
+        }
+}
+
+
+
+
+

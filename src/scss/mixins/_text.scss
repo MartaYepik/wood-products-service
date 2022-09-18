@@ -1,0 +1,44 @@
+@mixin text {
+    font-size: 1.9em;
+
+    @media screen and (max-width:1308px) {
+        & {
+            font-size: 1.8em;
+        }
+    }
+
+    @media screen and (max-width:1140px) {
+        & {
+            font-size: 1.7em;
+        }
+    }
+    @media screen and (max-width:660px) {
+        & {
+            font-size: 1.4em;
+        }
+    }
+
+    @media screen and (max-width:570px) {
+        & {
+            font-size: 1.2em;
+        }
+    }
+
+    @media screen and (max-width:440px) {
+        & {
+            font-size: 1.1em;
+        }
+    }
+
+    @media screen and (max-width:358px) {
+        & {
+            font-size: 1em;
+        }
+    }
+
+    @media screen and (max-width:320px) {
+        & {
+            font-size: 0.8em;
+        }
+    }
+}
